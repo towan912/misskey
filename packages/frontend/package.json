@@ -48,7 +48,7 @@
 		"estree-walker": "3.0.3",
 		"eventemitter3": "5.0.1",
 		"execa": "9.6.0",
-		"exifreader": "4.32.0",
+		"exifreader": "4.40.1",
 		"frontend-shared": "workspace:*",
 		"icons-subsetter": "workspace:*",
 		"idb-keyval": "6.2.2",
@@ -80,7 +80,7 @@
 		"tsconfig-paths": "4.2.0",
 		"typescript": "5.9.3",
 		"v-code-diff": "1.13.1",
-		"vite": "7.2.2",
+		"vite": "7.3.5",
 		"vue": "3.5.24",
 		"vuedraggable": "next",
 		"wanakana": "5.3.1"
