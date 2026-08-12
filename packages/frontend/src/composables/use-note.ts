@@ -156,7 +156,7 @@ export function useNote(
 	const collapsed = ref(appearNote.cw == null && isLong);
 	const canRenote = ['public', 'home'].includes(appearNote.visibility) || (appearNote.visibility === 'followers' && appearNote.userId === $i?.id);
 	const showTicker = (prefer.s.instanceTicker === 'always') || (prefer.s.instanceTicker === 'remote' && appearNote.user.instance);
-	const renoteCollapsed = ref(prefer.s.collapseRenotes && isRenote && (($i && ($i.id === rawNote.userId || $i.id === appearNote.userId)) || ($appearNote.myReaction != null)));
+	const renoteCollapsed = ref((prefer.s.collapseAllRenotes && isRenote) || (prefer.s.collapseRenotes && isRenote && (($i && ($i.id === rawNote.userId || $i.id === appearNote.userId)) || ($appearNote.myReaction != null))));
 
 	const pleaseLoginContext: OpenOnRemoteOptions = {
 		type: 'lookup',

@@ -175,6 +175,15 @@ SPDX-License-Identifier: AGPL-3.0-only
 								</MkPreferenceContainer>
 							</SearchMarker>
 
+							<SearchMarker :keywords="['renote']">
+								<MkPreferenceContainer k="collapseAllRenotes">
+									<MkSwitch v-model="collapseAllRenotes">
+										<template #label><SearchLabel>{{ i18n.ts.collapseAllRenotes }}</SearchLabel></template>
+										<template #caption><SearchText>{{ i18n.ts.collapseAllRenotesDescription }}</SearchText></template>
+									</MkSwitch>
+								</MkPreferenceContainer>
+							</SearchMarker>
+
 							<SearchMarker :keywords="['pinned', 'list']">
 								<MkFolder>
 									<template #label><SearchLabel>{{ i18n.ts.pinnedList }}</SearchLabel></template>
@@ -907,6 +916,7 @@ const hemisphere = prefer.model('hemisphere');
 const showNoteActionsOnlyHover = prefer.model('showNoteActionsOnlyHover');
 const showClipButtonInNoteFooter = prefer.model('showClipButtonInNoteFooter');
 const collapseRenotes = prefer.model('collapseRenotes');
+const collapseAllRenotes = prefer.model('collapseAllRenotes');
 const advancedMfm = prefer.model('advancedMfm');
 const showReactionsCount = prefer.model('showReactionsCount');
 const enableQuickAddMfmFunction = prefer.model('enableQuickAddMfmFunction');
