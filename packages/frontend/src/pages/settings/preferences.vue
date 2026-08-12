@@ -167,19 +167,19 @@ SPDX-License-Identifier: AGPL-3.0-only
 							</SearchMarker>
 
 							<SearchMarker :keywords="['renote']">
-								<MkPreferenceContainer k="collapseRenotes">
-									<MkSwitch v-model="collapseRenotes" :disabled="collapseAllRenotes">
-										<template #label><SearchLabel>{{ i18n.ts.collapseRenotes }}</SearchLabel></template>
-										<template #caption><SearchText>{{ i18n.ts.collapseRenotesDescription }}</SearchText></template>
+								<MkPreferenceContainer k="collapseAllRenotes">
+									<MkSwitch v-model="collapseAllRenotes">
+										<template #label><SearchLabel>{{ i18n.ts.collapseAllRenotes }}</SearchLabel></template>
+										<template #caption><SearchText>{{ i18n.ts.collapseAllRenotesDescription }}</SearchText></template>
 									</MkSwitch>
 								</MkPreferenceContainer>
 							</SearchMarker>
 
 							<SearchMarker :keywords="['renote']">
-								<MkPreferenceContainer k="collapseAllRenotes">
-									<MkSwitch v-model="collapseAllRenotes">
-										<template #label><SearchLabel>{{ i18n.ts.collapseAllRenotes }}</SearchLabel></template>
-										<template #caption><SearchText>{{ i18n.ts.collapseAllRenotesDescription }}</SearchText></template>
+								<MkPreferenceContainer k="collapseRenotes">
+									<MkSwitch v-model="collapseRenotes" :disabled="collapseAllRenotes">
+										<template #label><SearchLabel>{{ i18n.ts.collapseRenotes }}</SearchLabel></template>
+										<template #caption><SearchText>{{ i18n.ts.collapseRenotesDescription }}</SearchText></template>
 									</MkSwitch>
 								</MkPreferenceContainer>
 							</SearchMarker>
