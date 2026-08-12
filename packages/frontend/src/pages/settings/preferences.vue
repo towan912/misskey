@@ -168,7 +168,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 							<SearchMarker :keywords="['renote']">
 								<MkPreferenceContainer k="collapseRenotes">
-									<MkSwitch v-model="collapseRenotes">
+									<MkSwitch v-model="collapseRenotes" :disabled="collapseAllRenotes">
 										<template #label><SearchLabel>{{ i18n.ts.collapseRenotes }}</SearchLabel></template>
 										<template #caption><SearchText>{{ i18n.ts.collapseRenotesDescription }}</SearchText></template>
 									</MkSwitch>
